@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Coding Quiz</title>
+</head>
+
+<body>
+    <header id="top-bar">
+        <button id="view"><a href="./highscores.html" title="View high scores">View high scores</a></button>
+        <div>
+            <p>Time:
+                <div class="time"> </div>
+            </p>
+        </div>
+    </header>
+    <main class="container">
+        <div class="intro-section">
+            <h1>Coding Quiz Challenge</h1>
+            <p id="intro-text">Try to answer the following code-related questions within the time limit. Keep in mind
+                that
+                incorrect answers will penalize your score/time by 10 seconds.</p>
+            <button class="start">Start quiz</button>
+        </div>
+
+        <!-- Questions will appear here -->
+        <div class="no-show" id="quiz">
+            <h2 id="questions-here">Commonly used data types DO NOT include:</h2>
+            <ol id="answers-here">
+                <li class="wrong">strings</li>
+                <li class="wrong">booleans</li>
+                <li class="correct">alerts</li>
+                <li class="wrong">numbers</li>
+            </ol>
+        </div>
+
+        <!-- //Question 2: -->
+        <div class="no-show" id="question-two">
+            <h2>The condition in an if / else statement is enclosed within ________.</h2>
+            <ol>
+                <li class="wrong-two">quotes</li>
+                <li class="wrong-two">curly brackets</li>
+                <li class="correct-two">parentheses</li>
+                <li class="wrong-two">square brackets</li>
+            </ol>
+        </div>
+
+        <!-- //Question 3: -->
+        <div class="no-show" id="question-three">
+            <h2>Arrays in JavaScript can be used to store _________.</h2>
+            <ol>
+                <li class="wrong-three">numbers and strings</li>
+                <li class="wrong-three">other arrays</li>
+                <li class="wrong-three">booleans</li>
+                <li class="correct-three">all of the above</li>
+            </ol>
+        </div>
+        <!-- //Question 4: -->
+        <div class="no-show" id="question-four">
+            <h2>String values must be enclosed within ________ when being assigned to variables.</h2>
+            <ol>
+                <li class="wrong-four">commas</li>
+                <li class="wrong-four">curly brackets</li>
+                <li class="correct-four">quotes</li>
+                <li class="wrong-four">parentheses</li>
+            </ol>
+        </div>
+        <!-- //Question 5: -->
+        <div class="no-show" id="question-five">
+            <h2>A very useful tool used during development and debugging for printing content to the debugger is:
+            </h2>
+            <ol>
+                <li class="wrong">JavaScript</li>
+                <li class="wrong">terminal / bash</li>
+                <li class="wrong">for loops</li>
+                <li class="correct">console log</li>
+            </ol>
+        </div>
+        <div class="no-show" id="rw-response">
+        </div>
+
+
+
+        <!-- final score  -->
+        <div class="no-show" id="final-score">
+            <h2>All done!</h2>
+            <p>Your final score is
+                <div id="final-score-here"></div>.</p>
+            <div class="initials-field-button">
+                <p>Enter initials:</p>
+                <div id="initials-input"> </div>
+                <button id="submit-initials">Submit</button>
+            </div>
+        </div>
+        <!-- also timer stopped. -->
+
+        <!--
+            <button class="no-show" id="next">Next Question</button>
+        <button class="no-show" id="submit">Submit Quiz</button> -->
+        <div id="results"></div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+<!-- comment in html -->
+
+</html>
