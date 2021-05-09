@@ -2,7 +2,8 @@ let startQuiz = document.querySelector(".start");
 let secondsLeft = 75;
 let timeEl = document.querySelector(".time");
 let intro = document.querySelector(".intro-section");
-let timerInterval;
+let timerInterval
+let finalScoreHere = document.getElementById("final-score-here");
 let quizContainer = document.querySelector("#quiz")
 let resultsContainer = document.getElementById("results");
 let submitButton = document.getElementById("submit-initials");
@@ -162,33 +163,26 @@ for (let button of wrongChoiceFive) {
     if (secondsLeft <= 0) {
       clearInterval(timerInterval);
       sendMessage();
+    } else {
+      clearInterval(timerInterval);
+      finalScoreHere.textContent = (secondsLeft);
+      //stop timer
     }
-    questionFive.style.display = "none";    
+    questionFive.style.display = "none";   
+    document.getElementById("quiz").className = "no-show"; 
     finalScore.style.display = "block";
     finalScore = secondsLeft;
 });
 }
 
-for (let button of correctChoiceFour) {
+for (let button of correctChoiceFive) {
   button.addEventListener("click", function () {
     rightWrong.textContent = "Yay!";
-    questionFive.style.display = "none";    
+    questionFive.style.display = "none";  
+    document.getElementById("quiz").className = "no-show";  
     finalScore.style.display = "block";
     finalScore = secondsLeft;
+    clearInterval(timerInterval);
+    finalScoreHere.textContent = (secondsLeft);
   });
-}
-
-
-
-
-//if the clicked button represents the correct answer, yay
-//if the clicked button = event.target.id (choiceone, choicetwo, choicethree)
-//correct answer is question.correctAnswer)
-
-
-//how to build html from js
-//within quiz container have Q container and Choices container, each choice
-//if user clicks a choice, then what happens.
-//attach event handler to each choice - 
-//use: this or event object - will tell you which button is clicked
-//think like a computer! step by step.
+};

@@ -12,7 +12,6 @@ body {
 
 main {
   margin: 110px 0 110px 0;
-  /* max-width: 80rem; */
 }
 
 h1 {
@@ -39,6 +38,13 @@ li {
   max-width: 100px;
 }
 
+input {
+margin-bottom: 15px;
+}
+
+p .add-score {
+  display: inline;
+}
 .container {
   width: 80vw;
   margin: 25px auto;
@@ -48,33 +54,7 @@ li {
   text-align: center;
 }
 
-/* .question-one {
-  visibility: hidden;
-}
-
-.question-two {
-  visibility: hidden;
-}
-
-.question-three {  
-  visibility: hidden;
-}
-
-.question-four {
-  visibility: hidden;
-}
-
-.question-five {
-  visibility: hidden;
-}
-
-.final-score {
-  visibility: hidden;
-}
-*/
-
 .no-show {
-  /*visibility: hidden;*/
   display: none;
 }
 
