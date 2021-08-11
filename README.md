@@ -1,4 +1,4 @@
-# code quiz
+# Code Quiz
 
 This is a multiple-choice quiz with 5 questions about JavaScript. The quiz is timed and if you select a wrong answer, 10 seconds are deducted from the timer. The timer is also your score! Good luck!
 
